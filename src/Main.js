@@ -33,8 +33,12 @@ const Main = () => {
 
       // console.log(result)
       const taux = Object.values(result.data)[0]
+
       // console.log(Object.values(symbolTaux));
-      settext2(taux * parseInt(text1))
+
+      const decimal = taux * parseInt(text1)
+
+      settext2(decimal.toFixed(2))
       // console.log(`https://free.currconv.com/api/v7/convert?q=${value1}_${value2}&compact=ultra&apiKey=a802757dd8a1bd9b3d5e`);
 
     })
